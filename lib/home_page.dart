@@ -57,7 +57,6 @@ class _HomePageState extends State<HomePage> {
               ),
               onDetailsPressed: () {},
               accountEmail: const Text("amitbahadur1994@gmail.com"),
-              arrowColor: Colors.red,
               currentAccountPicture: SizedBox(
                 child: Stack(
                   children: [
@@ -141,32 +140,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            //Back up data
-            Card(
-              elevation: 2,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)),
-              shadowColor: Colors.black,
-              child: ListTile(
-                leading: const Icon(Icons.backup),
-                title: const Text(" Backup"),
-                onTap: () {},
-              ),
-            ),
-
-            //Generate Pdf
-            Card(
-              elevation: 3,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)),
-              shadowColor: Colors.black,
-              child: ListTile(
-                leading: const Icon(Icons.article),
-                title: const Text("Generate PDF"),
-                onTap: () {},
-              ),
-            ),
-
             //Terms and Conditions
             Card(
               elevation: 4,
@@ -181,21 +154,6 @@ class _HomePageState extends State<HomePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) => TermsAndConditions()));
-                },
-              ),
-            ),
-
-            //Share
-            Card(
-              elevation: 5,
-              shape: ContinuousRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)),
-              shadowColor: Colors.black,
-              child: ListTile(
-                leading: const Icon(Icons.share),
-                title: const Text("Share"),
-                onTap: () {
-                  setState(() {});
                 },
               ),
             ),
